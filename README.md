@@ -66,3 +66,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Resources for implementing project
+
+Docker Template for Node.js https://github.com/cloudNativeJS/docker
+Installing using template wget https://raw.githubusercontent.com/CloudNativeJS/docker/master/Dockerfile
+Installing a docker ignore file to not include these files in the build wget https://raw.githubusercontent.com/CloudNativeJS/docker/master/.dockerignore
+Building my application into a docker image - docker build -t appname -f Dockerfile .
+Use - docker images  // to list all images in your local repo
+Use - docker run -i -p 3000:3000 -t nodeserver // to run application in a docker container mapping port 3000 from within the container to 3000 outside the container
